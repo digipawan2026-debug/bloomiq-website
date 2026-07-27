@@ -1,3 +1,4 @@
+import FragranceNotes from "@/components/FragranceNotes";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -29,6 +30,9 @@ export default function Home() {
       </FadeIn>
 
       <FadeIn delay={0.1}>
+
+        <FragranceNotes />
+
         <ProductShowcase />
       </FadeIn>
 
