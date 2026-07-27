@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: #050505;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: var(--font-playfair);
+}
+
+.font-body {
+  font-family: var(--font-poppins);
+}
+
+/* Luxury gold glow */
+body::before {
+  content: "";
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  right: -250px;
+  top: -180px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.18),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Soft left glow */
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  left: -180px;
+  bottom: -150px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.08),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes floatBottle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-bottle {
+  animation: floatBottle 5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+.gold-glow {
+  animation: glowPulse 6s ease-in-out infinite;
+}html {
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-visible,
+  .float-bottle,
+  .gold-glow {
+    animation: none;
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
