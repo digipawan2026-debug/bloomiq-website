@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import {
   BriefcaseBusiness,
   Crown,
@@ -42,68 +45,92 @@ const highlights = [
 
 export default function ProductHighlights() {
   return (
-    <section className="relative overflow-hidden bg-[#080706] px-6 py-24 sm:px-8 lg:px-20 lg:py-32">
-      {/* Background effects */}
+    <section className="relative overflow-hidden bg-[#080706] px-5 py-20 sm:px-8 sm:py-24 lg:px-16 lg:py-28">
+      {/* Background atmosphere */}
+      <div className="pointer-events-none absolute -left-40 top-16 h-[430px] w-[430px] rounded-full bg-[#7a1830]/14 blur-[170px]" />
+      <div className="pointer-events-none absolute -right-40 bottom-0 h-[460px] w-[460px] rounded-full bg-[#D4AF37]/10 blur-[180px]" />
 
-      <div className="absolute left-[-120px] top-20 h-80 w-80 rounded-full bg-[#7a1830]/15 blur-[140px]" />
-
-      <div className="absolute bottom-0 right-[-100px] h-96 w-96 rounded-full bg-[#D4AF37]/10 blur-[160px]" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl">
         {/* Heading */}
-
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs uppercase tracking-[7px] text-[#D4AF37] sm:text-sm">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <p className="text-[10px] uppercase tracking-[5px] text-[#D4AF37] sm:text-xs">
             Made For Every Occasion
           </p>
 
-          <h2 className="mt-6 text-4xl font-light leading-tight text-white sm:text-5xl lg:text-7xl">
+          <h2 className="mt-4 font-heading text-3xl font-light leading-tight text-white sm:text-4xl lg:text-5xl">
             One Fragrance.
             <br />
             Endless Moments.
           </h2>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg">
+          <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-400 sm:text-base">
             From everyday confidence to unforgettable celebrations, Velvet Oud
             Royal is designed to complement every meaningful moment.
           </p>
-        </div>
+        </motion.div>
 
         {/* Highlight cards */}
-
-        <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {highlights.map((item) => {
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {highlights.map((item, index) => {
             const Icon = item.icon;
 
             return (
-              <article
+              <motion.article
                 key={item.title}
-                className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#D4AF37]/50 hover:shadow-[0_24px_80px_rgba(212,175,55,0.12)]"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.65,
+                  delay: index * 0.08,
+                }}
+                className="group relative overflow-hidden rounded-[26px] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#D4AF37]/45 hover:shadow-[0_24px_80px_rgba(212,175,55,0.11)]"
               >
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.12),transparent_55%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+                {/* Hover glow */}
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.13),transparent_56%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+
+                {/* Top highlight */}
+                <div className="pointer-events-none absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/35 to-transparent" />
 
                 <div className="relative">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#D4AF37]/30 bg-[#D4AF37]/10 text-[#D4AF37] transition-all duration-500 group-hover:scale-110 group-hover:border-[#D4AF37]/60 group-hover:shadow-[0_0_35px_rgba(212,175,55,0.2)]">
-                    <Icon size={25} strokeWidth={1.5} />
+                  <div className="flex h-13 w-13 items-center justify-center rounded-2xl border border-[#D4AF37]/25 bg-[#D4AF37]/10 text-[#D4AF37] transition-all duration-500 group-hover:scale-110 group-hover:border-[#D4AF37]/55 group-hover:shadow-[0_0_32px_rgba(212,175,55,0.18)]">
+                    <Icon size={23} strokeWidth={1.5} />
                   </div>
 
-                  <h3 className="mt-7 text-2xl font-light text-white">
+                  <h3 className="mt-6 font-heading text-2xl font-light text-white">
                     {item.title}
                   </h3>
 
                   <div className="mt-4 h-px w-12 bg-[#D4AF37]/60 transition-all duration-500 group-hover:w-24" />
 
-                  <p className="mt-5 leading-8 text-gray-400">{item.text}</p>
+                  <p className="mt-4 text-sm leading-7 text-gray-400">
+                    {item.text}
+                  </p>
                 </div>
-              </article>
+              </motion.article>
             );
           })}
         </div>
 
         {/* Bottom statement */}
-
-        <div className="mx-auto mt-16 max-w-3xl text-center">
-          <p className="text-xl font-light leading-9 text-gray-300 sm:text-2xl">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+          className="mx-auto mt-14 max-w-3xl text-center"
+        >
+          <p className="font-heading text-xl font-light leading-9 text-gray-300 sm:text-2xl">
             Wear it to work. Wear it to celebrate.
             <br />
             Wear it whenever you want to be remembered.
@@ -111,11 +138,11 @@ export default function ProductHighlights() {
 
           <a
             href="#collection"
-            className="mt-9 inline-flex rounded-full bg-[#D4AF37] px-9 py-4 text-sm font-bold uppercase tracking-[2px] text-black transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#E8C866] hover:shadow-[0_0_35px_rgba(212,175,55,0.4)]"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#CDA434] via-[#E4C562] to-[#CDA434] px-9 py-4 text-xs font-bold uppercase tracking-[2px] text-black transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_32px_rgba(212,175,55,0.35)]"
           >
             Choose Your Bottle
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

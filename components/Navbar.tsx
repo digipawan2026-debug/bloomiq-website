@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+const links = [
+  { name: "Home", href: "#home" },
+  { name: "Collection", href: "#collection" },
+  { name: "Story", href: "#story" },
+  { name: "Contact", href: "#contact" },
+];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -17,13 +24,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { name: "Home", href: "#home" },
-    { name: "Collection", href: "#collection" },
-    { name: "Story", href: "#story" },
-    { name: "Contact", href: "#contact" },
-  ];
-
   return (
     <header
       className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
@@ -38,6 +38,7 @@ export default function Navbar() {
             scrolled ? "h-16" : "h-20"
           }`}
         >
+          {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
             <img
               src="/logo.jpeg"
@@ -56,6 +57,7 @@ export default function Navbar() {
             </div>
           </a>
 
+          {/* Desktop navigation */}
           <nav className="hidden items-center gap-8 text-sm uppercase tracking-[3px] lg:flex">
             {links.map((item) => (
               <a
@@ -68,6 +70,7 @@ export default function Navbar() {
             ))}
           </nav>
 
+          {/* Desktop shop button */}
           <a
             href="#collection"
             className="hidden rounded-full bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:bg-[#E8C866] sm:inline-block"
@@ -75,19 +78,21 @@ export default function Navbar() {
             Shop Now
           </a>
 
+          {/* Mobile menu button */}
           <button
             type="button"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex flex-col gap-1 lg:hidden"
+            onClick={() => setMobileOpen((current) => !current)}
+            className="flex flex-col gap-1.5 lg:hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileOpen}
           >
-            <span className="h-0.5 w-6 bg-white"></span>
-            <span className="h-0.5 w-6 bg-white"></span>
-            <span className="h-0.5 w-6 bg-white"></span>
+            <span className="h-0.5 w-6 bg-white" />
+            <span className="h-0.5 w-6 bg-white" />
+            <span className="h-0.5 w-6 bg-white" />
           </button>
         </div>
 
+        {/* Mobile navigation */}
         {mobileOpen && (
           <div className="border-t border-[#D4AF37]/20 pb-6 pt-2 lg:hidden">
             <nav className="mt-4 flex flex-col gap-5">
@@ -96,7 +101,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="uppercase tracking-[3px] text-gray-300 hover:text-[#D4AF37]"
+                  className="uppercase tracking-[3px] text-gray-300 transition hover:text-[#D4AF37]"
                 >
                   {item.name}
                 </a>

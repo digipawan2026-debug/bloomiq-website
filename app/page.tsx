@@ -1,71 +1,58 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import ProductShowcase from "../components/ProductShowcase";
-import FragranceExperience from "../components/FragranceExperience";
-import ProductHighlights from "../components/ProductHighlights";
-import WhyBloomiq from "../components/WhyBloomiq";
-import BrandStory from "../components/BrandStory";
-import GiftSection from "../components/GiftSection";
-import BrandPromise from "../components/BrandPromise";
-import FAQ from "../components/FAQ";
-import LuxuryCTA from "../components/LuxuryCTA";
-import ContactSection from "../components/ContactSection";
-import Footer from "../components/Footer";
-import FloatingWhatsApp from "../components/FloatingWhatsApp";
-import ScrollReveal from "../components/ScrollReveal";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import BackToTop from "@/components/BackToTop";
+import ScrollProgress from "@/components/ScrollProgress";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ProductShowcase from "@/components/ProductShowcase";
+import ProductHighlights from "@/components/ProductHighlights";
+import WhyBloomiq from "@/components/WhyBloomiq";
+import BrandStory from "@/components/BrandStory";
+import FAQ from "@/components/FAQ";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import FadeIn from "@/components/FadeIn";
 
 export default function Home() {
   return (
-    <main
-      id="home"
-      className="min-h-screen overflow-x-hidden bg-[#050505] text-white"
-    >
-      <Navbar />
+    <main className="min-h-screen overflow-x-hidden bg-black text-white">
+      <ScrollProgress />
 
-      <Hero />
+      <BackToTop />
+      <WhatsAppButton />
 
-      <ScrollReveal>
+
+
+     <Navbar />
+
+      <FadeIn>
+        <Hero />
+      </FadeIn>
+
+      <FadeIn delay={0.1}>
         <ProductShowcase />
-      </ScrollReveal>
+      </FadeIn>
 
-      <ScrollReveal>
-        <FragranceExperience />
-      </ScrollReveal>
-
-      <ScrollReveal>
+      <FadeIn delay={0.2}>
         <ProductHighlights />
-      </ScrollReveal>
+      </FadeIn>
 
-      <ScrollReveal>
+      <FadeIn delay={0.3}>
         <WhyBloomiq />
-      </ScrollReveal>
+      </FadeIn>
 
-      <ScrollReveal>
+      <FadeIn delay={0.4}>
         <BrandStory />
-      </ScrollReveal>
+      </FadeIn>
 
-      <ScrollReveal>
-        <GiftSection />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <BrandPromise />
-      </ScrollReveal>
-
-      <ScrollReveal>
+      <FadeIn delay={0.5}>
         <FAQ />
-      </ScrollReveal>
+      </FadeIn>
 
-      <ScrollReveal>
-        <LuxuryCTA />
-      </ScrollReveal>
-
-      <ScrollReveal>
+      <FadeIn delay={0.6}>
         <ContactSection />
-      </ScrollReveal>
+      </FadeIn>
 
       <Footer />
-      <FloatingWhatsApp />
     </main>
   );
 }

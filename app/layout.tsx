@@ -1,114 +1,108 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bloomiq.in"),
+
   title: {
     default: "BLOOMIQ Velvet Oud Royal | Affordable Luxury Perfume",
     template: "%s | BLOOMIQ",
   },
 
   description:
-    "Discover BLOOMIQ Velvet Oud Royal, a premium unisex Eau De Parfum created for everyday confidence, office wear, parties, date nights and gifting. Available in 30 ml and 50 ml.",
+    "Discover BLOOMIQ Velvet Oud Royal, an affordable luxury perfume crafted for elegance, confidence and a memorable long-lasting fragrance experience.",
 
   keywords: [
     "BLOOMIQ",
-    "BLOOMIQ perfume",
     "Velvet Oud Royal",
-    "luxury perfume",
     "affordable luxury perfume",
-    "unisex perfume",
-    "Eau De Parfum",
-    "oud perfume",
+    "oud perfume India",
     "long lasting perfume",
-    "premium perfume India",
+    "premium perfume",
     "perfume for men and women",
-    "gift perfume",
+    "luxury fragrance India",
+    "30 ml perfume",
+    "50 ml perfume",
   ],
 
-  authors: [{ name: "BLOOMIQ" }],
+  authors: [
+    {
+      name: "BLOOMIQ",
+    },
+  ],
+
   creator: "BLOOMIQ",
   publisher: "BLOOMIQ",
 
-  category: "Beauty and Fragrance",
-
   applicationName: "BLOOMIQ",
 
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+  category: "Beauty and Fragrance",
 
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+  alternates: {
+    canonical: "/",
   },
 
   openGraph: {
-    type: "website",
-    locale: "en_IN",
-    siteName: "BLOOMIQ",
-    title: "BLOOMIQ Velvet Oud Royal | Affordable Luxury Perfume",
+    title: "BLOOMIQ Velvet Oud Royal",
     description:
-      "Experience Velvet Oud Royal, a premium unisex Eau De Parfum from BLOOMIQ. Affordable luxury in 30 ml and 50 ml.",
+      "Affordable luxury perfume designed for elegance, confidence and a memorable fragrance trail.",
+    url: "https://bloomiq.in",
+    siteName: "BLOOMIQ",
     images: [
       {
-        url: "/perfume50.jpeg",
+        url: "/og-image.jpeg",
         width: 1200,
         height: 630,
         alt: "BLOOMIQ Velvet Oud Royal luxury perfume",
       },
     ],
+    locale: "en_IN",
+    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "BLOOMIQ Velvet Oud Royal",
     description:
-      "Affordable luxury unisex Eau De Parfum by BLOOMIQ, available in 30 ml and 50 ml.",
-    images: ["/perfume50.jpeg"],
+      "Affordable luxury perfume crafted for an elegant and memorable presence.",
+    images: ["/og-image.jpeg"],
   },
 
   icons: {
-    icon: "/logo.jpeg",
-    shortcut: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    icon: [
+      {
+        url: "/favicon.ico",
+      },
+      {
+        url: "/icon.png",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+      },
+    ],
   },
 
-  alternates: {
-    canonical: "/",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#050505",
-  colorScheme: "dark",
+  maximumScale: 5,
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
@@ -117,12 +111,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-IN">
-      <body
-        className={`${playfair.variable} ${poppins.variable} bg-black text-white antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
