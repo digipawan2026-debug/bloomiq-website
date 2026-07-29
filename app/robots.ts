@@ -7,5 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
     sitemap: "https://bloomiq.in/sitemap.xml",
+    host: "https://bloomiq.in",
   };
 }

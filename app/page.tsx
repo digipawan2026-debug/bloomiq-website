@@ -13,50 +13,69 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 
+import {
+  productSchema,
+  faqSchema,
+} from "@/lib/schema";
+
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-black text-white">
-      <ScrollProgress />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productSchema).replace(/</g, "\\u003c"),
+        }}
+      />
 
-      <BackToTop />
-      <WhatsAppButton />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
 
+      <main className="min-h-screen overflow-x-hidden bg-black text-white">
+        <ScrollProgress />
 
+        <BackToTop />
 
-     <Navbar />
+        <WhatsAppButton />
 
-      <FadeIn>
-        <Hero />
-      </FadeIn>
+        <Navbar />
 
-      <FadeIn delay={0.1}>
+        <FadeIn>
+          <Hero />
+        </FadeIn>
 
-        <FragranceNotes />
+        <FadeIn delay={0.1}>
+          <FragranceNotes />
 
-        <ProductShowcase />
-      </FadeIn>
+          <ProductShowcase />
+        </FadeIn>
 
-      <FadeIn delay={0.2}>
-        <ProductHighlights />
-      </FadeIn>
+        <FadeIn delay={0.2}>
+          <ProductHighlights />
+        </FadeIn>
 
-      <FadeIn delay={0.3}>
-        <WhyBloomiq />
-      </FadeIn>
+        <FadeIn delay={0.3}>
+          <WhyBloomiq />
+        </FadeIn>
 
-      <FadeIn delay={0.4}>
-        <BrandStory />
-      </FadeIn>
+        <FadeIn delay={0.4}>
+          <BrandStory />
+        </FadeIn>
 
-      <FadeIn delay={0.5}>
-        <FAQ />
-      </FadeIn>
+        <FadeIn delay={0.5}>
+          <FAQ />
+        </FadeIn>
 
-      <FadeIn delay={0.6}>
-        <ContactSection />
-      </FadeIn>
+        <FadeIn delay={0.6}>
+          <ContactSection />
+        </FadeIn>
 
-      <Footer />
-    </main>
+        <Footer />
+      </main>
+    </>
   );
 }
