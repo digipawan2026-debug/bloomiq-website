@@ -80,9 +80,24 @@ export const productSchema = {
   countryOfOrigin: "India",
 
   audience: {
-    "@type": "PeopleAudience",
-    suggestedGender: "Unisex",
-  },
+"@type": "PeopleAudience",
+suggestedGender: "Unisex",
+},
+
+review: {
+"@type": "Review",
+author: {
+"@type": "Person",
+name: "@manish2458",
+},
+reviewRating: {
+"@type": "Rating",
+ratingValue: "5",
+bestRating: "5",
+},
+reviewBody:
+"Excellent perfume BLOOMIQ. Loved the name, packing, perfume — everything.",
+},
 
   offers: [
     {

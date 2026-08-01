@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "/" },
   { name: "Collection", href: "#collection" },
   { name: "Story", href: "#story" },
   { name: "Contact", href: "#contact" },
@@ -39,7 +39,7 @@ export default function Navbar() {
           }`}
         >
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <img
               src="/logo.jpeg"
               alt="BLOOMIQ"
