@@ -36,7 +36,10 @@ export default function Hero() {
             A rich and elegant fragrance crafted for confidence, office days,
             evenings, celebrations and unforgettable moments.
           </p>
-
+          
+<p className="mt-6 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-500">
+  Introductory Launch Price
+</p>
           <div className="mt-8 flex items-center gap-4">
             <span className="text-lg text-zinc-500 line-through">₹999</span>
 
@@ -59,7 +62,7 @@ export default function Hero() {
               href="#story"
               className="rounded-full border border-yellow-500/60 px-8 py-4 text-center text-yellow-500 transition hover:bg-yellow-500 hover:text-black"
             >
-              View Details
+              Discover Velvet Oud Royal
             </a>
           </div>
 

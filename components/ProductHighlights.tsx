@@ -140,7 +140,7 @@ export default function ProductHighlights() {
             href="#collection"
             className="mt-8 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#CDA434] via-[#E4C562] to-[#CDA434] px-9 py-4 text-xs font-bold uppercase tracking-[2px] text-black transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_32px_rgba(212,175,55,0.35)]"
           >
-            Choose Your Bottle
+            Explore Collection
           </a>
         </motion.div>
       </div>

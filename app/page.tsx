@@ -1,3 +1,4 @@
+import CustomerReviews from "@/components/CustomerReviews";
 import FragranceNotes from "@/components/FragranceNotes";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
@@ -65,6 +66,8 @@ export default function Home() {
         <FadeIn delay={0.4}>
           <BrandStory />
         </FadeIn>
+
+        <CustomerReviews />
 
         <FadeIn delay={0.5}>
           <FAQ />
