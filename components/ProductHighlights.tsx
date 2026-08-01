@@ -74,8 +74,7 @@ export default function ProductHighlights() {
           <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-400 sm:text-base">
-            From everyday confidence to unforgettable celebrations, Velvet Oud
-            Royal is designed to complement every meaningful moment.
+            From everyday confidence to unforgettable celebrations, Velvet Oud Royal leaves an elegant, lasting impression wherever the moment takes you.
           </p>
         </motion.div>
 

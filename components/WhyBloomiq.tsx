@@ -69,8 +69,7 @@ export default function WhyBloomiq() {
           <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-400 sm:text-base">
-            Every bottle is created to deliver elegance, confidence and a
-            memorable fragrance experience.
+            Premium fragrance character, elegant presentation and everyday wearability — without the premium price barrier.
           </p>
         </motion.div>
 

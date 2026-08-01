@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://bloomiq.in/sitemap.xml",
-    host: "https://bloomiq.in",
+    sitemap: "https://www.bloomiq.in/sitemap.xml",
+    host: "https://www.bloomiq.in/sitemap.xml",
   };
 }

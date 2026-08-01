@@ -1,18 +1,18 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://bloomiq.in/#organization",
+  "@id": "https://www.bloomiq.in/#organization",
 
   name: "BLOOMIQ",
 
-  url: "https://bloomiq.in",
+  url: "https://www.bloomiq.in",
 
   logo: {
     "@type": "ImageObject",
-    url: "https://bloomiq.in/icon.png",
+    url: "https://www.bloomiq.in/icon.png",
   },
 
-  image: "https://bloomiq.in/og-image.jpeg",
+  image: "https://www.bloomiq.in/og-image.jpeg",
 
   description:
     "BLOOMIQ is an Indian affordable luxury fragrance brand creating premium long-lasting unisex Eau de Parfum for everyday confidence, office wear, daily wear, parties, date nights, gifting and special occasions.",
@@ -35,9 +35,9 @@ export const organizationSchema = {
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://bloomiq.in/#website",
+  "@id": "https://www.bloomiq.in/#website",
 
-  url: "https://bloomiq.in",
+  url: "https://www.bloomiq.in",
 
   name: "BLOOMIQ",
 
@@ -47,7 +47,7 @@ export const websiteSchema = {
     "Official BLOOMIQ website featuring premium long-lasting affordable luxury perfumes.",
 
   publisher: {
-    "@id": "https://bloomiq.in/#organization",
+    "@id": "https://www.bloomiq.in/#organization",
   },
 
   inLanguage: "en-IN",
@@ -58,7 +58,7 @@ export const productSchema = {
 
   "@type": "Product",
 
-  "@id": "https://bloomiq.in/#velvet-oud-royal",
+  "@id": "https://www.bloomiq.in/#velvet-oud-royal",
 
   name: "BLOOMIQ Velvet Oud Royal",
 
@@ -70,8 +70,8 @@ export const productSchema = {
   category: "Perfume",
 
   image: [
-    "https://bloomiq.in/perfume50.jpeg",
-    "https://bloomiq.in/perfume30.jpeg",
+    "https://www.bloomiq.in/perfume50.jpeg",
+    "https://www.bloomiq.in/perfume30.jpeg",
   ],
 
   description:
@@ -106,7 +106,7 @@ reviewBody:
       priceCurrency: "INR",
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
-      url: "https://bloomiq.in",
+      url: "https://www.bloomiq.in",
     },
     {
       "@type": "Offer",
@@ -114,7 +114,7 @@ reviewBody:
       priceCurrency: "INR",
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
-      url: "https://bloomiq.in",
+      url: "https://www.bloomiq.in",
     },
   ],
 };

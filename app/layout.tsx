@@ -8,7 +8,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bloomiq.in"),
+  metadataBase: new URL("https://www.bloomiq.in"),
 
   title: {
     default: "BLOOMIQ Velvet Oud Royal | Affordable Luxury Perfume",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   title: "BLOOMIQ Velvet Oud Royal | Premium Long-Lasting Perfume",
   description:
     "Affordable luxury perfume designed for elegance, confidence and a memorable fragrance trail.",
-  url: "https://bloomiq.in",
+  url: "https://www.bloomiq.in",
   siteName: "BLOOMIQ",
   images: [
     {
