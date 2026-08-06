@@ -26,7 +26,7 @@ export default function BlogPage() {
   className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
 >
             <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
-              Coming Soon
+              Office Fragrance Guide
             </p>
 
             <h2 className="mt-4 font-heading text-2xl font-light">
@@ -39,20 +39,23 @@ export default function BlogPage() {
             </p>
           </Link>
 
-          <article className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
-            <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
-              Coming Soon
-            </p>
+          <Link
+  href="/blog/edt-vs-edp-parfum-extrait-indian-weather"
+  className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
+>
+  <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
+    Fragrance Concentration Guide
+  </p>
 
-            <h2 className="mt-4 font-heading text-2xl font-light">
-              EDP vs EDT: Which Is Better for Indian Weather?
-            </h2>
+  <h2 className="mt-4 font-heading text-2xl font-light">
+    EDT vs EDP vs Parfum vs Extrait: Which Is Better for Indian Weather?
+  </h2>
 
-            <p className="mt-4 text-sm leading-7 text-gray-400">
-              Understand concentration, projection, wear time and what those terms
-              actually mean when choosing a perfume.
-            </p>
-          </article>
+  <p className="mt-4 text-sm leading-7 text-gray-400">
+    Understand what fragrance concentration labels really mean, how they differ
+    in wearing experience, and how to choose the right format for Indian weather.
+  </p>
+</Link>
 
           <article className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
             <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">

@@ -26,5 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "monthly",
   priority: 0.5,
 },
+{
+  url: "https://www.bloomiq.in/blog/edt-vs-edp-parfum-extrait-indian-weather",
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
   ];
 }
