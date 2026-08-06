@@ -155,7 +155,12 @@ export default function OfficePerfumeArticle() {
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3 text-xs text-gray-500">
-            <span>By BLOOMIQ Editorial Team</span>
+            <Link
+  href="/editorial-policy"
+  className="transition hover:text-[#D4AF37]"
+>
+  By BLOOMIQ Editorial Team
+</Link>
             <span>•</span>
             <span>Updated August 2026</span>
             <span>•</span>
