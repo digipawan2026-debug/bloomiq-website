@@ -1,4 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "BLOOMIQ Fragrance Journal | Perfume Guides for India",
+  description:
+    "Explore BLOOMIQ fragrance guides on long-lasting perfume, oud, perfume concentration, office fragrances and choosing scents for Indian weather.",
+  alternates: {
+    canonical: "https://www.bloomiq.in/blog",
+  },
+  openGraph: {
+    title: "BLOOMIQ Fragrance Journal",
+    description:
+      "Practical fragrance guides on perfume longevity, oud, concentration and choosing the right scent for everyday life in India.",
+    url: "https://www.bloomiq.in/blog",
+    siteName: "BLOOMIQ",
+    type: "website",
+    locale: "en_IN",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function BlogPage() {
   return (
