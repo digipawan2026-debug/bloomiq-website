@@ -57,20 +57,24 @@ export default function BlogPage() {
   </p>
 </Link>
 
-          <article className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
-            <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
-              Coming Soon
-            </p>
+          <Link
+  href="/blog/how-to-choose-long-lasting-perfume"
+  className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
+>
+  <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
+    Perfume Longevity Guide
+  </p>
 
-            <h2 className="mt-4 font-heading text-2xl font-light">
-              How to Choose a Long-Lasting Perfume
-            </h2>
+  <h2 className="mt-4 font-heading text-2xl font-light">
+    How to Choose a Long-Lasting Perfume
+  </h2>
 
-            <p className="mt-4 text-sm leading-7 text-gray-400">
-              What longevity really means, how projection differs from wear time and
-              what to look for before buying.
-            </p>
-          </article>
+  <p className="mt-4 text-sm leading-7 text-gray-400">
+    Learn what really affects perfume longevity, how projection differs from
+    wear time, and how to evaluate performance without relying only on
+    marketing-hour claims.
+  </p>
+</Link>
         </div>
 
         <div className="mt-14 text-center">
