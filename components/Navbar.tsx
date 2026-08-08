@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Collection", href: "#collection" },
-  { name: "Story", href: "#story" },
-  { name: "Contact", href: "#contact" },
+  { name: "Collection", href: "/#collection" },
+  { name: "Story", href: "/#story" },
+  { name: "Journal", href: "/blog" },
+  { name: "Contact", href: "/#contact" },
 ];
-
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
