@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "How to Choose a Long-Lasting Perfume: A Practical Guide for Indian Weather | BLOOMIQ",
+  "How to Choose a Long-Lasting Perfume: A Practical Guide for Indian Weather",
   description:
     "Learn how to choose a long-lasting perfume without relying on exaggerated hour claims. Understand longevity, projection, concentration, skin, clothing and Indian weather.",
   alternates: {
@@ -217,7 +217,7 @@ export default function LongLastingPerfumeArticle() {
             </Link>
 
             <span>•</span>
-            <span>Updated August 2026</span>
+            <span>Published August 8, 2026</span>
             <span>•</span>
             <span>Fragrance Education</span>
           </div>
@@ -699,11 +699,11 @@ export default function LongLastingPerfumeArticle() {
               </Link>
 
               <Link
-                href="/blog"
-                className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
-              >
-                Oud Guide — coming soon
-              </Link>
+  href="/blog/oud-perfume-guide-indian-weather"
+  className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
+>
+  Oud Perfume Guide
+</Link>
             </div>
           </section>
         </div>

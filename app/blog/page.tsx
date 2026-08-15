@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "BLOOMIQ Fragrance Journal | Perfume Guides for India",
+  title: "Fragrance Journal | Perfume Guides for India",
   description:
     "Explore BLOOMIQ fragrance guides on long-lasting perfume, oud, perfume concentration, office fragrances and choosing scents for Indian weather.",
   alternates: {
@@ -45,9 +45,9 @@ export default function BlogPage() {
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Link
-  href="/blog/how-to-choose-office-perfume-indian-weather"
-  className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
->
+            href="/blog/how-to-choose-office-perfume-indian-weather"
+            className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
+          >
             <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
               Office Fragrance Guide
             </p>
@@ -63,41 +63,61 @@ export default function BlogPage() {
           </Link>
 
           <Link
-  href="/blog/edt-vs-edp-parfum-extrait-indian-weather"
-  className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
->
-  <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
-    Fragrance Concentration Guide
-  </p>
+            href="/blog/edt-vs-edp-parfum-extrait-indian-weather"
+            className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
+          >
+            <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
+              Fragrance Concentration Guide
+            </p>
 
-  <h2 className="mt-4 font-heading text-2xl font-light">
-    EDT vs EDP vs Parfum vs Extrait: Which Is Better for Indian Weather?
-  </h2>
+            <h2 className="mt-4 font-heading text-2xl font-light">
+              EDT vs EDP vs Parfum vs Extrait: Which Is Better for Indian Weather?
+            </h2>
 
-  <p className="mt-4 text-sm leading-7 text-gray-400">
-    Understand what fragrance concentration labels really mean, how they differ
-    in wearing experience, and how to choose the right format for Indian weather.
-  </p>
-</Link>
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Understand what fragrance concentration labels really mean, how they
+              differ in wearing experience, and how to choose the right format for
+              Indian weather.
+            </p>
+          </Link>
 
           <Link
-  href="/blog/how-to-choose-long-lasting-perfume"
-  className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
->
-  <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
-    Perfume Longevity Guide
-  </p>
+            href="/blog/how-to-choose-long-lasting-perfume"
+            className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
+          >
+            <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
+              Perfume Longevity Guide
+            </p>
 
-  <h2 className="mt-4 font-heading text-2xl font-light">
-    How to Choose a Long-Lasting Perfume
-  </h2>
+            <h2 className="mt-4 font-heading text-2xl font-light">
+              How to Choose a Long-Lasting Perfume
+            </h2>
 
-  <p className="mt-4 text-sm leading-7 text-gray-400">
-    Learn what really affects perfume longevity, how projection differs from
-    wear time, and how to evaluate performance without relying only on
-    marketing-hour claims.
-  </p>
-</Link>
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Learn what really affects perfume longevity, how projection differs
+              from wear time, and how to evaluate performance without relying only
+              on marketing-hour claims.
+            </p>
+          </Link>
+
+          <Link
+            href="/blog/oud-perfume-guide-indian-weather"
+            className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
+          >
+            <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
+              Oud Fragrance Guide
+            </p>
+
+            <h2 className="mt-4 font-heading text-2xl font-light">
+              Oud Perfume Guide: How to Choose Oud for Indian Weather
+            </h2>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Understand how oud perfumes smell, how different oud styles behave,
+              and how to choose a balanced oud fragrance for Indian weather,
+              office wear and everyday use.
+            </p>
+          </Link>
         </div>
 
         <div className="mt-14 text-center">

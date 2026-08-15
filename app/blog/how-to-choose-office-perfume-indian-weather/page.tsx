@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Choose an Office Perfume for Indian Weather | BLOOMIQ",
+  title: "How to Choose an Office Perfume for Indian Weather",
   description:
     "Learn how to choose an office perfume for Indian weather, including fragrance strength, projection, EDP vs EDT, application, commuting and professional settings.",
   keywords: [
@@ -156,13 +156,14 @@ export default function OfficePerfumeArticle() {
 
           <div className="mt-7 flex flex-wrap items-center gap-3 text-xs text-gray-500">
             <Link
-  href="/editorial-policy"
-  className="transition hover:text-[#D4AF37]"
->
-  By BLOOMIQ Editorial Team
-</Link>
+              href="/editorial-policy"
+              className="transition hover:text-[#D4AF37]"
+            >
+              By BLOOMIQ Editorial Team
+            </Link>
+
             <span>•</span>
-            <span>Updated August 2026</span>
+            <span>Published August 6, 2026</span>
             <span>•</span>
             <span>Fragrance Education</span>
           </div>
@@ -260,10 +261,10 @@ export default function OfficePerfumeArticle() {
 
             <div className="mt-6">
               <Link
-                href="/blog"
+                href="/blog/edt-vs-edp-parfum-extrait-indian-weather"
                 className="text-sm font-semibold text-[#D4AF37] transition hover:text-[#F0D37A]"
               >
-                Coming soon: our complete EDP vs EDT guide →
+                Read our complete EDT vs EDP vs Parfum vs Extrait guide →
               </Link>
             </div>
           </section>
@@ -320,7 +321,7 @@ export default function OfficePerfumeArticle() {
           {/* Section 6 */}
           <section>
             <h2 className="font-heading text-3xl font-light">
-              6. Don't judge a perfume only from the first five minutes
+              6. Don&apos;t judge a perfume only from the first five minutes
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
@@ -486,27 +487,27 @@ export default function OfficePerfumeArticle() {
             </h2>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                href="/blog"
-                className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
-              >
-                EDP vs EDT — coming soon
-              </Link>
+  <Link
+    href="/blog/edt-vs-edp-parfum-extrait-indian-weather"
+    className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
+  >
+    EDT vs EDP vs Parfum vs Extrait
+  </Link>
 
-              <Link
-                href="/blog"
-                className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
-              >
-                Long-Lasting Perfume Guide — coming soon
-              </Link>
+  <Link
+    href="/blog/how-to-choose-long-lasting-perfume"
+    className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
+  >
+    Long-Lasting Perfume Guide
+  </Link>
 
-              <Link
-                href="/blog"
-                className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
-              >
-                Oud Guide — coming soon
-              </Link>
-            </div>
+  <Link
+    href="/blog/oud-perfume-guide-indian-weather"
+    className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
+  >
+    Oud Perfume Guide
+  </Link>
+</div>
           </section>
         </div>
       </article>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Editorial Policy | BLOOMIQ",
+  title: "Editorial Policy",
   description:
     "Learn how BLOOMIQ researches, writes, reviews and updates fragrance education content, product claims and editorial recommendations.",
   alternates: {

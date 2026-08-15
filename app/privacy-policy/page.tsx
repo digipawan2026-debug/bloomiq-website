@@ -1,3 +1,21 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Learn how BLOOMIQ collects, uses, stores and protects your personal information.",
+  alternates: {
+    canonical: "https://www.bloomiq.in/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | BLOOMIQ",
+    description:
+      "Learn how BLOOMIQ collects, uses, stores and protects your personal information.",
+    url: "https://www.bloomiq.in/privacy-policy",
+    siteName: "BLOOMIQ",
+    type: "website",
+  },
+};
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-black px-6 py-24 text-gray-300">

@@ -1,3 +1,21 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Refund and Return Policy",
+  description:
+    "Read the BLOOMIQ refund and return policy for damaged, incorrect or defective products and marketplace purchases.",
+  alternates: {
+    canonical: "https://www.bloomiq.in/refund-policy",
+  },
+  openGraph: {
+    title: "Refund and Return Policy | BLOOMIQ",
+    description:
+      "Read the BLOOMIQ refund and return policy for damaged, incorrect or defective products and marketplace purchases.",
+    url: "https://www.bloomiq.in/refund-policy",
+    siteName: "BLOOMIQ",
+    type: "website",
+  },
+};
 export default function RefundPolicyPage() {
   return (
     <main className="min-h-screen bg-black px-6 py-24 text-gray-300">

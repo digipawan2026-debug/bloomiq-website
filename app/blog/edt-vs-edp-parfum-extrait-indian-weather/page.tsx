@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export const metadata: Metadata = {
   title:
-    "EDT vs EDP vs Parfum vs Extrait: Which Is Better for Indian Weather? | BLOOMIQ",
+    "EDT vs EDP vs Parfum vs Extrait: Which Is Better for Indian Weather?",
   description:
     "Understand EDT, EDP, Parfum and Extrait de Parfum, how fragrance concentration works, and how to choose the right perfume for Indian weather.",
   alternates: {
@@ -203,7 +203,7 @@ export default function PerfumeConcentrationArticle() {
             </Link>
 
             <span>•</span>
-            <span>Updated August 2026</span>
+            <span>Published August 6, 2026</span>
             <span>•</span>
             <span>Fragrance Education</span>
           </div>
@@ -648,18 +648,18 @@ export default function PerfumeConcentrationArticle() {
               </Link>
 
               <Link
-                href="/blog"
+                href="/blog/how-to-choose-long-lasting-perfume"
                 className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
               >
-                Long-Lasting Perfume Guide — coming soon
+                Long-Lasting Perfume Guide
               </Link>
 
               <Link
-                href="/blog"
-                className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
-              >
-                Oud Guide — coming soon
-              </Link>
+  href="/blog/oud-perfume-guide-indian-weather"
+  className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
+>
+  Oud Perfume Guide
+</Link>
             </div>
           </section>
         </div>

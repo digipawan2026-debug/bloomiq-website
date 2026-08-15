@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Terms and Conditions",
+  description:
+    "Read the BLOOMIQ terms and conditions covering website use, product information, pricing, purchases and intellectual property.",
+  alternates: {
+    canonical: "https://www.bloomiq.in/terms",
+  },
+  openGraph: {
+    title: "Terms and Conditions | BLOOMIQ",
+    description:
+      "Read the BLOOMIQ terms and conditions covering website use, product information, pricing, purchases and intellectual property.",
+    url: "https://www.bloomiq.in/terms",
+    siteName: "BLOOMIQ",
+    type: "website",
+  },
+};
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-black px-6 py-24 text-gray-300">

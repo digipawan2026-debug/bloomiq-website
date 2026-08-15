@@ -1,3 +1,21 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shipping Policy",
+  description:
+    "Read BLOOMIQ shipping information, delivery timelines, shipping charges and support details for your orders.",
+  alternates: {
+    canonical: "https://www.bloomiq.in/shipping-policy",
+  },
+  openGraph: {
+    title: "Shipping Policy | BLOOMIQ",
+    description:
+      "Read BLOOMIQ shipping information, delivery timelines, shipping charges and support details for your orders.",
+    url: "https://www.bloomiq.in/shipping-policy",
+    siteName: "BLOOMIQ",
+    type: "website",
+  },
+};
 export default function ShippingPolicyPage() {
   return (
     <main className="min-h-screen bg-black px-6 py-24 text-gray-300">
