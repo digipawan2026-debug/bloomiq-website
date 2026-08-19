@@ -3,19 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title:
-  "How to Choose a Long-Lasting Perfume: A Practical Guide for Indian Weather",
+  title: "How to Choose a Long-Lasting Perfume in India | BLOOMIQ",
   description:
-    "Learn how to choose a long-lasting perfume without relying on exaggerated hour claims. Understand longevity, projection, concentration, skin, clothing and Indian weather.",
+    "Learn how to choose a long-lasting perfume in India. Understand perfume longevity, Eau de Parfum lasting time, projection, concentration, skin, clothing and Indian weather.",
   alternates: {
     canonical:
       "https://www.bloomiq.in/blog/how-to-choose-long-lasting-perfume",
   },
   openGraph: {
-    title:
-      "How to Choose a Long-Lasting Perfume: A Practical Guide for Indian Weather",
+    title: "How to Choose a Long-Lasting Perfume in India | BLOOMIQ",
     description:
-      "A practical guide to perfume longevity, projection, concentration and choosing fragrance for real-world Indian conditions.",
+      "A practical guide to choosing a long-lasting perfume, understanding Eau de Parfum lasting time, projection, concentration and performance in Indian weather.",
     url: "https://www.bloomiq.in/blog/how-to-choose-long-lasting-perfume",
     siteName: "BLOOMIQ",
     type: "article",
@@ -31,10 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "How to Choose a Long-Lasting Perfume | BLOOMIQ",
+    title: "How to Choose a Long-Lasting Perfume in India | BLOOMIQ",
     description:
-      "What actually makes perfume last? Learn how to evaluate longevity without relying only on concentration labels or marketing claims.",
+      "What makes perfume last longer? Learn about perfume longevity, concentration, application and Indian weather.",
     images: ["https://www.bloomiq.in/perfume50.jpeg"],
   },
 };
@@ -42,10 +39,9 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline:
-    "How to Choose a Long-Lasting Perfume: A Practical Guide for Indian Weather",
+  headline: "How to Choose a Long-Lasting Perfume in India",
   description:
-    "A practical guide to understanding perfume longevity, projection, concentration, application and fragrance performance in Indian conditions.",
+    "A practical guide to choosing a long-lasting perfume and understanding perfume longevity, Eau de Parfum lasting time, projection, concentration, application and Indian weather.",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
@@ -67,7 +63,7 @@ const articleSchema = {
     },
   },
   datePublished: "2026-08-08",
-  dateModified: "2026-08-08",
+  dateModified: "2026-08-19",
   inLanguage: "en-IN",
   articleSection: "Fragrance Education",
 };
@@ -126,36 +122,69 @@ const longevityFactors = [
   },
 ];
 
+const testingSteps = [
+  {
+    step: "01",
+    title: "Do not judge only the opening",
+    text: "The first few minutes reveal only part of the fragrance. Allow time for the scent to develop into its heart and dry-down.",
+  },
+  {
+    step: "02",
+    title: "Test it in your normal routine",
+    text: "A fragrance tested in an air-conditioned shop may behave differently during your commute, workplace or outdoor activities.",
+  },
+  {
+    step: "03",
+    title: "Check it at intervals",
+    text: "Instead of continuously smelling the application point, return to it periodically and notice how the scent changes.",
+  },
+  {
+    step: "04",
+    title: "Separate longevity from projection",
+    text: "A fragrance may still be present even after it stops projecting strongly around you.",
+  },
+  {
+    step: "05",
+    title: "Compare like with like",
+    text: "When comparing two perfumes, use similar application amounts and similar conditions wherever practical.",
+  },
+];
+
 const faqItems = [
   {
-    q: "Which type of perfume lasts the longest?",
-    a: "Higher-concentration formats such as Parfum or Extrait may offer a richer and potentially persistent fragrance experience, but concentration alone does not determine longevity. The complete formulation, application and environment also matter.",
+    q: "What type of fragrance lasts the longest?",
+    a: "Parfum and Extrait are typically higher-concentration formats and may provide a more persistent wearing experience, but concentration alone does not determine longevity. Formulation, application, skin, clothing and environment also matter.",
   },
   {
-    q: "Does EDP last longer than EDT?",
-    a: "An Eau de Parfum is generally positioned at a higher fragrance concentration than an Eau de Toilette, but that does not guarantee that every EDP will outlast every EDT. Compare the actual fragrances rather than relying only on the label.",
+    q: "Does Eau de Parfum last longer than Eau de Toilette?",
+    a: "Eau de Parfum generally has a higher fragrance concentration than Eau de Toilette, but that does not guarantee that every EDP will last longer than every EDT. The complete fragrance formula and wearing conditions influence performance.",
   },
   {
-    q: "How many hours should a good perfume last?",
-    a: "There is no universal number of hours that defines a good perfume. Performance varies with formulation, application, skin, clothing and environment. A useful evaluation considers how the fragrance develops and remains enjoyable for your intended use.",
+    q: "How long does Eau de Parfum last?",
+    a: "There is no universal Eau de Parfum lasting time. Performance varies by fragrance formulation, skin, application, clothing, temperature, humidity and activity.",
+  },
+  {
+    q: "How do I find a long-lasting perfume?",
+    a: "Test the fragrance through its dry-down during your normal routine. Compare scents under similar conditions and consider longevity separately from projection or the strength of the opening spray.",
   },
   {
     q: "Why does perfume disappear quickly on my skin?",
-    a: "Skin characteristics, application, environment and the fragrance formula can all influence perceived longevity. You can also become less aware of a familiar scent over time even when other people can still detect it.",
+    a: "Skin characteristics, application, environment and the fragrance formula can influence perceived longevity. You can also become less aware of a familiar scent over time even when others can still notice it.",
   },
   {
     q: "Where should I apply perfume for better longevity?",
-    a: "Fragrance is commonly applied to areas such as the neck and wrists. Avoid excessive rubbing after application. Clothing can also retain some fragrance materials differently from skin, but always consider the fabric and the possibility of staining.",
+    a: "Fragrance is commonly applied to areas such as the neck and wrists. Avoid excessive rubbing immediately after application. Clothing may retain some fragrance materials differently from skin, but delicate fabrics should be treated carefully.",
   },
   {
     q: "Is long-lasting perfume only for men or women?",
-    a: "No. Longevity is a performance characteristic, not a gender category. Men, women and anyone else can choose a fragrance according to the scent profile, wearing experience and performance they prefer.",
+    a: "No. Longevity is a performance characteristic rather than a gender category. Men, women and anyone else can choose a fragrance according to scent profile, occasion and personal preference.",
   },
 ];
 
 export default function LongLastingPerfumeArticle() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      {/* Article Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -163,6 +192,7 @@ export default function LongLastingPerfumeArticle() {
         }}
       />
 
+      {/* Breadcrumb Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -197,15 +227,15 @@ export default function LongLastingPerfumeArticle() {
           </p>
 
           <h1 className="mt-5 font-heading text-4xl font-light leading-tight sm:text-5xl lg:text-6xl">
-            How to Choose a Long-Lasting Perfume: A Practical Guide for
-            Indian Weather
+            How to Choose a Long-Lasting Perfume in India
           </h1>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-gray-300">
-            A long-lasting perfume is not simply the bottle with the highest
-            concentration or the biggest performance claim. Real-world
-            longevity depends on the complete fragrance formula, how and where
-            you apply it, your environment and how the scent develops over time.
+            Finding a long-lasting perfume is not simply about choosing the
+            bottle with the highest concentration or the biggest performance
+            claim. Perfume longevity depends on the complete fragrance formula,
+            application, skin, clothing, environment and the conditions in
+            which you wear it.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3 text-xs text-gray-500">
@@ -219,11 +249,13 @@ export default function LongLastingPerfumeArticle() {
             <span>•</span>
             <span>Published August 8, 2026</span>
             <span>•</span>
+            <span>Updated August 19, 2026</span>
+            <span>•</span>
             <span>Fragrance Education</span>
           </div>
         </header>
 
-        {/* Hero Answer */}
+        {/* Quick Answer */}
         <section className="mt-12 overflow-hidden rounded-[30px] border border-[#D4AF37]/20 bg-gradient-to-br from-[#17110B] via-[#090909] to-[#170A0F]">
           <div className="grid items-center gap-8 p-7 sm:p-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
@@ -236,11 +268,12 @@ export default function LongLastingPerfumeArticle() {
               </h2>
 
               <p className="mt-5 leading-8 text-gray-300">
-                Look beyond a promised number of hours. Consider the fragrance
-                formulation, concentration, scent character, intended occasion,
-                application and the conditions in which you will actually wear
-                it. Test the fragrance through its dry-down whenever possible
-                instead of judging longevity from the opening spray alone.
+                A long-lasting perfume is one that remains detectable for a
+                useful period during your normal routine, but no concentration
+                label can guarantee an exact number of hours. To choose one,
+                evaluate the fragrance formulation, concentration, dry-down,
+                application, climate and the environment in which you plan to
+                wear it.
               </p>
             </div>
 
@@ -301,7 +334,7 @@ export default function LongLastingPerfumeArticle() {
             </p>
           </section>
 
-          {/* Marketing Claims */}
+          {/* Buyer Awareness */}
           <section className="rounded-[28px] border border-[#D4AF37]/20 bg-[#D4AF37]/[0.04] p-7 sm:p-9">
             <p className="text-[10px] uppercase tracking-[4px] text-[#D4AF37]">
               Buyer Awareness
@@ -325,7 +358,7 @@ export default function LongLastingPerfumeArticle() {
             </p>
           </section>
 
-          {/* Factors Table */}
+          {/* Performance Factors */}
           <section>
             <p className="text-[10px] uppercase tracking-[4px] text-[#D4AF37]">
               Performance Factors
@@ -372,6 +405,31 @@ export default function LongLastingPerfumeArticle() {
             </div>
           </section>
 
+          {/* Direct Answer */}
+          <section className="rounded-[28px] border border-[#D4AF37]/20 bg-[#D4AF37]/[0.04] p-7 sm:p-9">
+            <p className="text-[10px] uppercase tracking-[4px] text-[#D4AF37]">
+              Direct Answer
+            </p>
+
+            <h2 className="mt-4 font-heading text-3xl font-light">
+              What type of fragrance lasts the longest?
+            </h2>
+
+            <p className="mt-5 leading-8 text-gray-300">
+              Parfum and Extrait are typically higher-concentration fragrance
+              formats and may provide a more persistent wearing experience than
+              lighter concentrations. However, the type of fragrance alone does
+              not determine longevity: formulation, ingredients, application,
+              skin, clothing and environment can all change how long a perfume
+              remains noticeable.
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-400">
+              This is why two perfumes carrying the same concentration label can
+              perform differently in real-world conditions.
+            </p>
+          </section>
+
           {/* Concentration */}
           <section>
             <h2 className="font-heading text-3xl font-light">
@@ -382,7 +440,8 @@ export default function LongLastingPerfumeArticle() {
               Not necessarily. Concentration can influence fragrance
               performance, but it is only one part of the formula. Two Eau de
               Parfums can behave very differently, and a higher concentration
-              does not automatically mean greater projection.
+              does not automatically mean greater projection or longer-lasting
+              performance.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
@@ -398,6 +457,35 @@ export default function LongLastingPerfumeArticle() {
             </Link>
           </section>
 
+          {/* Eau de Parfum */}
+          <section className="rounded-[28px] border border-white/10 bg-white/[0.03] p-7 sm:p-9">
+            <p className="text-[10px] uppercase tracking-[4px] text-[#D4AF37]">
+              Eau de Parfum
+            </p>
+
+            <h2 className="mt-4 font-heading text-3xl font-light">
+              How long does Eau de Parfum last?
+            </h2>
+
+            <p className="mt-5 leading-8 text-gray-300">
+              There is no universal Eau de Parfum lasting time. An EDP may
+              remain noticeable for several hours, but actual longevity varies
+              substantially between fragrances and wearers because
+              concentration is only one part of the formula.
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-400">
+              Skin, application amount, fragrance materials, clothing,
+              temperature, humidity, activity and time spent indoors or outdoors
+              can all affect how an Eau de Parfum performs.
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-400">
+              For that reason, it is better to test an EDP through its opening,
+              heart and dry-down than to rely on a fixed hour claim.
+            </p>
+          </section>
+
           {/* Indian Weather */}
           <section>
             <p className="text-[10px] uppercase tracking-[4px] text-[#D4AF37]">
@@ -409,16 +497,18 @@ export default function LongLastingPerfumeArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              India does not have one uniform fragrance environment. Hot outdoor
-              commutes, humid coastal conditions, dry heat, monsoon weather and
-              long periods inside air-conditioned spaces can create very
-              different wearing experiences.
+              Choosing a long-lasting perfume in India requires considering the
+              conditions in which you actually wear fragrance. India does not
+              have one uniform climate: hot outdoor commutes, humid coastal
+              conditions, dry heat, monsoon weather and long periods inside
+              air-conditioned spaces can create very different wearing
+              experiences.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
               Instead of choosing perfume solely because it is marketed as
-              powerful, think about where you spend most of your day and how much
-              projection is appropriate for that environment.
+              powerful, think about where you spend most of your day and how
+              much projection is appropriate for that environment.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -447,8 +537,8 @@ export default function LongLastingPerfumeArticle() {
                   Humid conditions
                 </h3>
                 <p className="mt-3 leading-7 text-gray-400">
-                  Evaluate the complete wearing experience because temperature,
-                  moisture and activity can influence how you perceive a scent.
+                  Temperature, moisture and activity can influence how a scent
+                  develops and how strongly you perceive it.
                 </p>
               </div>
 
@@ -471,44 +561,26 @@ export default function LongLastingPerfumeArticle() {
             </Link>
           </section>
 
-          {/* Testing Guide */}
+          {/* Finding a Long-Lasting Perfume */}
           <section>
             <p className="text-[10px] uppercase tracking-[4px] text-[#D4AF37]">
               Practical Buying Guide
             </p>
 
             <h2 className="mt-4 font-heading text-3xl font-light">
-              How to test whether a perfume is genuinely long-lasting
+              How to find a long-lasting perfume that suits you
             </h2>
 
+            <p className="mt-5 leading-8 text-gray-400">
+              To find a long-lasting perfume, test how it performs throughout
+              your normal day rather than judging only the opening spray.
+              Compare fragrances under similar conditions and pay attention
+              separately to longevity, projection and how much you enjoy the
+              dry-down.
+            </p>
+
             <div className="mt-7 space-y-5">
-              {[
-                {
-                  step: "01",
-                  title: "Do not judge only the opening",
-                  text: "The first few minutes reveal only part of the fragrance. Allow time for the scent to develop into its heart and dry-down.",
-                },
-                {
-                  step: "02",
-                  title: "Test it in your normal routine",
-                  text: "A fragrance tested in an air-conditioned shop may behave differently during your commute, workplace or outdoor activities.",
-                },
-                {
-                  step: "03",
-                  title: "Check it at intervals",
-                  text: "Instead of continuously smelling the application point, return to it periodically and notice how the scent changes.",
-                },
-                {
-                  step: "04",
-                  title: "Separate longevity from projection",
-                  text: "A fragrance may still be present even after it stops projecting strongly around you.",
-                },
-                {
-                  step: "05",
-                  title: "Compare like with like",
-                  text: "When comparing two perfumes, use similar application amounts and similar conditions wherever practical.",
-                },
-              ].map((item) => (
+              {testingSteps.map((item) => (
                 <div
                   key={item.step}
                   className="grid gap-4 rounded-[22px] border border-white/10 bg-white/[0.02] p-6 sm:grid-cols-[60px_1fr]"
@@ -521,7 +593,9 @@ export default function LongLastingPerfumeArticle() {
                     <h3 className="text-lg font-medium text-white">
                       {item.title}
                     </h3>
-                    <p className="mt-2 leading-7 text-gray-400">{item.text}</p>
+                    <p className="mt-2 leading-7 text-gray-400">
+                      {item.text}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -588,9 +662,9 @@ export default function LongLastingPerfumeArticle() {
                 <p className="mt-5 leading-8 text-gray-400">
                   Velvet Oud Royal is BLOOMIQ&apos;s unisex Eau de Parfum,
                   created for an elegant fragrance experience across everyday
-                  wear and special occasions. As with any perfume, its real-world
-                  performance depends on application, environment and the
-                  individual wearing experience.
+                  wear and special occasions. As with any perfume, its
+                  real-world performance depends on application, environment
+                  and the individual wearing experience.
                 </p>
 
                 <Link
@@ -604,7 +678,7 @@ export default function LongLastingPerfumeArticle() {
               <div className="relative mx-auto aspect-square w-full max-w-[260px]">
                 <Image
                   src="/perfume50.jpeg"
-                  alt="BLOOMIQ Velvet Oud Royal long-lasting unisex Eau de Parfum"
+                  alt="BLOOMIQ Velvet Oud Royal unisex Eau de Parfum"
                   fill
                   sizes="260px"
                   className="object-contain"
@@ -629,8 +703,13 @@ export default function LongLastingPerfumeArticle() {
                   key={faq.q}
                   className="rounded-[20px] border border-white/10 p-6"
                 >
-                  <h3 className="text-lg font-medium text-white">{faq.q}</h3>
-                  <p className="mt-3 leading-7 text-gray-400">{faq.a}</p>
+                  <h3 className="text-lg font-medium text-white">
+                    {faq.q}
+                  </h3>
+
+                  <p className="mt-3 leading-7 text-gray-400">
+                    {faq.a}
+                  </p>
                 </div>
               ))}
             </div>
@@ -647,11 +726,12 @@ export default function LongLastingPerfumeArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              BLOOMIQ treats perfume performance as variable rather than
-              promising that a concentration label alone guarantees a fixed
-              number of hours. Our fragrance education content distinguishes
-              between concentration, longevity and projection and is reviewed as
-              our product information and supporting sources evolve.
+              BLOOMIQ prepares fragrance education content to help readers
+              understand perfume terminology and real-world wearing conditions.
+              We do not treat a concentration label as a guarantee of a fixed
+              number of performance hours. This guide distinguishes longevity,
+              projection and concentration and is reviewed when relevant product
+              information or authoritative fragrance guidance changes.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4">
@@ -699,11 +779,11 @@ export default function LongLastingPerfumeArticle() {
               </Link>
 
               <Link
-  href="/blog/oud-perfume-guide-indian-weather"
-  className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
->
-  Oud Perfume Guide
-</Link>
+                href="/blog/oud-perfume-guide-indian-weather"
+                className="rounded-full border border-white/10 px-5 py-3 text-sm text-gray-300 transition hover:border-[#D4AF37]/40 hover:text-[#D4AF37]"
+              >
+                Oud Perfume Guide
+              </Link>
             </div>
           </section>
         </div>
