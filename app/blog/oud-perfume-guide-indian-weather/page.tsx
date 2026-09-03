@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Oud Perfume Guide: How to Choose Oud for Indian Weather",
   description:
-    "Learn what oud perfume is, how oud fragrances smell, how to choose oud for Indian weather, office wear, evenings, gifting and unisex use.",
+    "Can oud perfume work in Indian weather? Learn how oud smells, which oud styles suit heat and humidity, and how to choose oud for office wear, evenings and unisex use.",
   keywords: [
     "oud perfume",
     "oud perfume guide",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Oud Perfume Guide: How to Choose Oud for Indian Weather",
     description:
-      "A practical guide to oud fragrance, scent character, performance, Indian weather, office wear and choosing a balanced oud perfume.",
+      "A practical guide to oud fragrance, how oud smells, how it performs in Indian weather, and how to choose oud for office wear, evenings and everyday use.",
     url: "https://www.bloomiq.in/blog/oud-perfume-guide-indian-weather",
     siteName: "BLOOMIQ",
     type: "article",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Oud Perfume Guide: How to Choose Oud for Indian Weather",
     description:
-      "Understand oud fragrance, how it smells, how to wear it and how to choose oud for Indian weather.",
+      "Understand how oud smells, how it behaves in Indian weather and how to choose a balanced oud perfume for everyday wear.",
     images: ["https://www.bloomiq.in/perfume50.jpeg"],
   },
 };
@@ -53,10 +53,11 @@ const articleSchema = {
   "@type": "BlogPosting",
   headline: "Oud Perfume Guide: How to Choose Oud for Indian Weather",
   description:
-    "A practical guide to understanding oud fragrance, how oud perfumes smell and how to choose a balanced oud perfume for Indian weather and everyday use.",
+    "A practical guide to understanding how oud smells, how oud perfumes behave in Indian weather and how to choose a balanced oud fragrance for everyday use.",
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://www.bloomiq.in/blog/oud-perfume-guide-indian-weather",
+    "@id":
+      "https://www.bloomiq.in/blog/oud-perfume-guide-indian-weather",
   },
   image: ["https://www.bloomiq.in/perfume50.jpeg"],
   author: {
@@ -74,7 +75,7 @@ const articleSchema = {
     },
   },
   datePublished: "2026-08-15",
-  dateModified: "2026-08-15",
+  dateModified: "2026-09-03",
   inLanguage: "en-IN",
   articleSection: "Fragrance Education",
 };
@@ -99,7 +100,8 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 3,
       name: "Oud Perfume Guide",
-      item: "https://www.bloomiq.in/blog/oud-perfume-guide-indian-weather",
+      item:
+        "https://www.bloomiq.in/blog/oud-perfume-guide-indian-weather",
     },
   ],
 };
@@ -138,7 +140,7 @@ const oudStyles = [
 const faqItems = [
   {
     q: "What does oud perfume smell like?",
-    a: "Oud can smell woody, resinous, smoky, warm, earthy or slightly leathery depending on the material and the way it is blended. Modern oud perfumes can also feel floral, fresh, musky, sweet or ambery.",
+    a: "Oud perfume usually smells woody, resinous, warm and rich, but it can also feel smoky, leathery, earthy, musky, floral or slightly sweet depending on the composition.",
   },
   {
     q: "Is oud perfume only for men?",
@@ -146,15 +148,15 @@ const faqItems = [
   },
   {
     q: "Is oud perfume suitable for Indian weather?",
-    a: "Yes, but the complete composition matters. Heavy oud blends can feel intense in hot outdoor conditions, while balanced oud fragrances with citrus, floral, musk or fresh elements can work comfortably in warmer climates.",
+    a: "Yes. Oud can work well in Indian weather when the composition is balanced and the application is controlled. Fresher, woody, floral or musky oud styles are often easier to wear in heat and humidity than very dense sweet or smoky blends.",
   },
   {
     q: "Can oud perfume be worn to the office?",
-    a: "Yes. Choose a balanced oud fragrance with moderate projection and apply it conservatively in shared spaces. A softer woody, floral or musky oud can work well professionally.",
+    a: "Yes. Choose an oud perfume with moderate projection and apply it lightly. Softer woody, floral or musky oud fragrances usually work better in shared indoor spaces than very dense smoky styles.",
   },
   {
     q: "Does oud perfume last longer?",
-    a: "Oud is often used in richer fragrance compositions, but longevity depends on the complete formula, concentration, application, skin, clothing and environment. Oud alone does not guarantee a fixed number of hours.",
+    a: "Oud perfumes can be long-lasting, but oud itself does not guarantee longer wear. Longevity depends on the full formula, concentration, application, skin, clothing and environment.",
   },
   {
     q: "Is oud perfume good for gifting?",
@@ -168,14 +170,14 @@ export default function OudPerfumeGuideArticle() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleSchema),
+          __html: JSON.stringify(articleSchema).replace(/</g, "\\u003c"),
         }}
       />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema),
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
         }}
       />
 
@@ -208,11 +210,10 @@ export default function OudPerfumeGuideArticle() {
           </h1>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-gray-300">
-            Oud is often associated with richness, depth and luxury, but not
-            every oud perfume is heavy, smoky or overpowering. Modern oud
-            fragrances can be woody, floral, fresh, musky, ambery or completely
-            unisex. The best choice depends on the composition, climate,
-            occasion and level of projection you enjoy.
+            Oud perfume can work very well in Indian weather when the composition
+            is balanced and the application suits the climate. Oud is often
+            associated with richness and depth, but modern oud fragrances can also
+            be woody, floral, fresh, musky, ambery and completely unisex.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3 text-xs text-gray-500">
@@ -225,6 +226,8 @@ export default function OudPerfumeGuideArticle() {
 
             <span>•</span>
             <span>Published August 15, 2026</span>
+            <span>•</span>
+            <span>Updated September 3, 2026</span>
             <span>•</span>
             <span>Fragrance Education</span>
           </div>
@@ -243,11 +246,11 @@ export default function OudPerfumeGuideArticle() {
               </h2>
 
               <p className="mt-5 leading-8 text-gray-300">
-                Look at the complete fragrance rather than choosing only because
-                the word “oud” appears on the bottle. Consider whether the oud is
-                woody, floral, fresh, smoky, musky or sweet, how strongly the
-                fragrance projects, where you plan to wear it and how it feels in
-                your normal climate.
+                A good oud perfume for Indian weather should feel balanced rather
+                than excessively heavy. Look for an oud composition with
+                controlled projection and supporting notes such as citrus,
+                florals, woods, amber or musk, then choose the style according to
+                your climate, occasion and preferred intensity.
               </p>
             </div>
 
@@ -272,17 +275,16 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Oud refers to the aromatic character traditionally associated with
-              agarwood. In perfumery, oud-style fragrances may use natural oud,
-              reconstructed oud accords or combinations of woody, resinous,
-              leathery, smoky, ambery and musky materials to create an oud
-              impression.
+              Oud in perfume is a deep woody and resinous fragrance style
+              associated with agarwood. Depending on the composition, it can
+              smell smoky, leathery, earthy, warm, ambery, floral or even fresh.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
-              This means two perfumes labelled “oud” can smell completely
-              different. One may feel dark and smoky, while another may be smooth,
-              floral, fresh or softly sweet.
+              Modern oud fragrances may use natural oud, reconstructed oud
+              accords or combinations of woody, resinous, leathery, smoky,
+              ambery and musky materials to create an oud effect. This is why two
+              perfumes labelled “oud” can smell completely different.
             </p>
           </section>
 
@@ -293,16 +295,15 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Oud is not one fixed smell. Depending on the fragrance, it can
-              appear woody, resinous, warm, smoky, leathery, earthy, musky or
-              slightly sweet.
+              Oud perfume usually smells woody, resinous, warm and rich, but it
+              can also appear smoky, leathery, earthy, musky, floral or slightly
+              sweet depending on the blend.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
-              The notes surrounding the oud often determine whether the perfume
-              feels dramatic or easy to wear. Citrus can brighten it, florals can
-              soften it, amber can add warmth and musk can make the dry-down feel
-              smoother.
+              The supporting notes shape how easy or intense the fragrance feels.
+              Citrus can brighten oud, florals can soften it, amber can add
+              warmth and musk can make the dry-down smoother.
             </p>
           </section>
 
@@ -367,9 +368,17 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Yes, but balance matters. India includes hot, humid, dry, monsoon
-              and air-conditioned environments, so there is no single oud style
-              that works everywhere.
+              Yes. Oud perfume can work very well in Indian weather, especially
+              when the composition is balanced and the application is controlled.
+              In hot or humid conditions, dense sweet or smoky oud fragrances can
+              project more strongly, while fresher, woody, floral or musky oud
+              styles are usually easier to wear.
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-400">
+              India includes hot, humid, dry, monsoon and air-conditioned
+              environments, so the best oud style can change depending on when
+              and where you wear it.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -378,8 +387,8 @@ export default function OudPerfumeGuideArticle() {
                   Hot outdoor conditions
                 </h3>
                 <p className="mt-3 leading-7 text-gray-400">
-                  Choose measured projection and consider oud blended with citrus,
-                  florals or cleaner woods rather than an extremely dense
+                  Choose controlled projection and consider oud blended with
+                  citrus, florals or cleaner woods rather than an extremely dense
                   composition.
                 </p>
               </div>
@@ -389,8 +398,8 @@ export default function OudPerfumeGuideArticle() {
                   Air-conditioned offices
                 </h3>
                 <p className="mt-3 leading-7 text-gray-400">
-                  A balanced woody, floral or musky oud can work well when applied
-                  conservatively in shared indoor spaces.
+                  A balanced woody, floral or musky oud can work well when
+                  applied conservatively in shared indoor spaces.
                 </p>
               </div>
 
@@ -399,9 +408,8 @@ export default function OudPerfumeGuideArticle() {
                   Humid weather
                 </h3>
                 <p className="mt-3 leading-7 text-gray-400">
-                  Pay attention to comfort and projection. Very dense sweet or
-                  smoky fragrances can feel more intense when heat and humidity
-                  rise.
+                  Pay attention to comfort and projection. Dense sweet or smoky
+                  fragrances can feel more intense as heat and humidity rise.
                 </p>
               </div>
 
@@ -410,8 +418,8 @@ export default function OudPerfumeGuideArticle() {
                   Evenings and occasions
                 </h3>
                 <p className="mt-3 leading-7 text-gray-400">
-                  Richer oud compositions can feel especially suitable when you
-                  want a more noticeable and dressed-up fragrance presence.
+                  Richer oud compositions can work especially well when you want
+                  a more noticeable, dressed-up fragrance presence.
                 </p>
               </div>
             </div>
@@ -424,15 +432,16 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Yes. Oud itself is not automatically too strong for professional
-              settings. The important factors are the complete composition,
-              projection and application.
+              Yes. Oud perfume can be worn to the office when it has moderate
+              projection and is applied lightly. Softer woody, floral or musky
+              oud fragrances usually work better in shared indoor environments
+              than very dense smoky styles.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
-              For office wear, start with a lighter application and choose an oud
-              that stays polished at close range rather than filling the entire
-              room.
+              The key is not avoiding oud itself, but choosing a polished
+              composition that stays comfortable at close range rather than
+              filling the entire room.
             </p>
 
             <Link
@@ -450,14 +459,15 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Oud is not inherently masculine or feminine. Its overall character
-              depends on the blend.
+              Oud perfume is suitable for men, women and unisex wear. Oud is a
+              fragrance material and scent style, not a gender category.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
-              Oud with rose, jasmine, amber, musk, citrus or woods can create
-              completely unisex fragrances. Choose according to the scent profile
-              you enjoy rather than the gender label on the packaging.
+              Oud blended with rose, jasmine, amber, musk, citrus or woods can
+              create very different personalities, so the better choice is the
+              scent profile you enjoy rather than the gender label on the
+              packaging.
             </p>
           </section>
 
@@ -468,15 +478,14 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Oud fragrances are often associated with strong performance, but
-              oud alone does not guarantee longevity.
+              Oud perfumes can be long-lasting, but oud itself does not guarantee
+              longer wear. Longevity depends on the complete formula,
+              concentration, application, skin, clothing and environment.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
-              Performance depends on the full formulation, concentration,
-              application, environment, skin and clothing. A balanced oud Eau de
-              Parfum can last differently from another oud fragrance even when
-              both carry similar concentration labels.
+              This is why two oud Eau de Parfums can perform very differently
+              even when both use similar concentration labels.
             </p>
 
             <Link
@@ -494,14 +503,15 @@ export default function OudPerfumeGuideArticle() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-400">
-              Concentration can influence the wearing experience, but it does not
-              tell you everything about strength, projection or longevity.
+              There is no single best concentration for oud. Choose based on the
+              wearing experience you want rather than assuming a higher
+              concentration is always stronger or better.
             </p>
 
             <p className="mt-4 leading-8 text-gray-400">
-              A well-balanced EDP may suit daily wear better than a denser
-              concentration, while Parfum or Extrait may appeal when you prefer a
-              richer or more intimate fragrance character.
+              A well-balanced EDP can be practical for regular wear, while Parfum
+              or Extrait may suit people who prefer a richer, denser or more
+              intimate fragrance character.
             </p>
 
             <Link
@@ -547,9 +557,9 @@ export default function OudPerfumeGuideArticle() {
                 <p className="mt-5 leading-8 text-gray-400">
                   Velvet Oud Royal is BLOOMIQ&apos;s unisex Eau de Parfum with a
                   rich fragrance character designed for everyday confidence,
-                  office wear, evenings, celebrations and gifting. Its composition
-                  combines freshness, florals, oud, amber and musk for a balanced
-                  interpretation of modern oud.
+                  office wear, evenings, celebrations and gifting. Its
+                  composition combines freshness, florals, oud, amber and musk
+                  for a balanced interpretation of modern oud.
                 </p>
 
                 <Link
@@ -608,8 +618,9 @@ export default function OudPerfumeGuideArticle() {
             <p className="mt-5 leading-8 text-gray-400">
               BLOOMIQ treats oud as a fragrance style with many possible
               interpretations rather than assuming every oud perfume is equally
-              heavy, strong or long-lasting. Our guidance focuses on the complete
-              composition, wearing environment and practical fragrance use.
+              heavy, strong or long-lasting. Our guidance focuses on the
+              complete composition, wearing environment and practical fragrance
+              use.
             </p>
 
             <Link
