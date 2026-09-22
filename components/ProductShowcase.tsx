@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const products = [
@@ -46,6 +47,12 @@ export default function ProductShowcase() {
           <p className="mx-auto mt-5 max-w-2xl leading-7 text-zinc-400">
             Experience the richness of Velvet Oud Royal in two elegant sizes.
           </p>
+          <Link
+  href="/products/velvet-oud-royal"
+  className="mt-5 inline-block text-sm font-medium text-yellow-500 underline underline-offset-4 transition hover:text-yellow-400"
+>
+  View Velvet Oud Royal Details →
+</Link>
         </motion.div>
 
         <div className="grid gap-8 md:grid-cols-2">
