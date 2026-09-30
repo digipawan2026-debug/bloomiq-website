@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Fragrance Journal | Perfume Guides for India",
   description:
-    "Explore BLOOMIQ fragrance guides on long-lasting perfume, oud, perfume concentration, office fragrances and choosing scents for Indian weather.",
+  "Explore BLOOMIQ fragrance guides on oud perfume, unisex perfume for men and women, daily wear fragrances, long-lasting perfume, office scents and Indian weather.",
   alternates: {
     canonical: "https://www.bloomiq.in/blog",
   },
@@ -44,6 +44,28 @@ export default function BlogPage() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <Link
+            href="/blog/oud-perfume-daily-wear-men-women-unisex-india"
+            className="block rounded-[24px] border border-[#D4AF37]/30 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/60"
+          >
+            <p className="text-[10px] uppercase tracking-[3px] text-[#D4AF37]">
+              Unisex Oud Guide
+            </p>
+
+            <h2 className="mt-4 font-heading text-2xl font-light">
+              Is Oud Perfume Good for Daily Wear? A Unisex Oud Guide for Men & Women in India
+            </h2>
+
+            <p className="mt-4 text-sm leading-7 text-gray-400">
+              Discover how men and women can wear oud perfume every day, including
+              office wear, Indian weather, fragrance styles and practical tips for
+              choosing a balanced unisex oud fragrance.
+            </p>
+
+            <p className="mt-5 text-xs font-semibold uppercase tracking-[2px] text-[#D4AF37]">
+              Read Guide →
+            </p>
+          </Link>
           <Link
             href="/blog/how-to-choose-office-perfume-indian-weather"
             className="block rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition hover:-translate-y-1 hover:border-[#D4AF37]/40"
